@@ -1,2 +1,6 @@
 autoCompleter_GUI/
 dictionary/
+benchtrie
+test
+*.o
+*.dSYM/

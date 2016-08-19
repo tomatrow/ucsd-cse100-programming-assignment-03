@@ -1,0 +1,3 @@
+#ifndef BENCHDICT_CPP
+#define BENCHDICT_CPP
+#endif // BENCHDICT_CPP
