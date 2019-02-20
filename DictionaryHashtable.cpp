@@ -1,3 +1,7 @@
+#ifndef DICTIONARYHASHTABLE_CPP
+#define DICTIONARYHASHTABLE_CPP
+
+
 #include "util.hpp"
 #include "DictionaryHashtable.hpp"
 
@@ -11,8 +15,11 @@ bool DictionaryHashtable::insert(std::string word) {
 
 /* Return true if word is in the dictionary, and false otherwise */
 bool DictionaryHashtable::find(std::string word) const {
-	return ((myDict.find(word) != myDict.end()) ? true : false);	
+	return ((myDict.find(word) != myDict.end()) ? true : false);
 }
 
 /* Destructor */
 DictionaryHashtable::~DictionaryHashtable(){}
+
+
+#endif // DICTIONARYHASHTABLE_CPP

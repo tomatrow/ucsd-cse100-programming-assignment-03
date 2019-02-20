@@ -1,18 +1,14 @@
-/**
- *  CSE 100 PA3 C++ Autocomplete
- *  Authors: Jor-el Briones, Christine Alvarado
- */
+#ifndef DICTIONARYBST_HPP
+#define DICTIONARYBST_HPP
 
-#ifndef DICTIONARY_BST_HPP
-#define DICTIONARY_BST_HPP
 #include <set>
 #include <string>
 
 /**
  *  The class for a dictionary ADT, implemented as a BST
  * When you implement this class, you MUST use a balanced binary
- * search tree in its implementation.  The C++ set implements 
- * a balanced BST, so we strongly suggest you use that to store 
+ * search tree in its implementation.  The C++ set implements
+ * a balanced BST, so we strongly suggest you use that to store
  * the dictionary.
  */
 class DictionaryBST {
@@ -36,4 +32,4 @@ private:
 
 };
 
-#endif // DICTIONARY_BST_HPP
+#endif // DICTIONARYBST_HPP

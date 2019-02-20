@@ -1,3 +1,6 @@
+#ifndef UTIL_CPP
+#define UTIL_CPP
+
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -33,7 +36,7 @@ long long Timer::end_timer() {
 }
 
 
-/*                                                                                                                                                                                                              
+/*
  * Load the words in the stream into the dictionary BST
  */
 void Utils::load_dict(DictionaryBST& dict, istream& words)
@@ -42,7 +45,7 @@ void Utils::load_dict(DictionaryBST& dict, istream& words)
   string data = "";
   string temp_word = "";
   string word = "";
-  vector<string> word_string; 
+  vector<string> word_string;
   unsigned int i = 0;
 
   while(getline(words, data))
@@ -70,7 +73,7 @@ void Utils::load_dict(DictionaryBST& dict, istream& words)
 }
 
 
-/*                                                                                                                                                                                                              
+/*
  * Load num_words from words stream into the dictionary BST
  */
 void Utils::load_dict(DictionaryBST& dict, istream& words, unsigned int num_words)
@@ -110,7 +113,7 @@ void Utils::load_dict(DictionaryBST& dict, istream& words, unsigned int num_word
 
 
 
-/*                                                                                                                                                                                                              
+/*
  * Load the words in the file into the dictionary hashtable
  */
 void Utils::load_dict(DictionaryHashtable& dict, istream& words)
@@ -146,8 +149,8 @@ void Utils::load_dict(DictionaryHashtable& dict, istream& words)
     }
 }
 
-/*                                                                                                                                                                                                              
- * Load num_words from words stream into the dictionary hashtable 
+/*
+ * Load num_words from words stream into the dictionary hashtable
  */
 void Utils::load_dict(DictionaryHashtable& dict, istream& words, unsigned int num_words)
 {
@@ -185,7 +188,7 @@ void Utils::load_dict(DictionaryHashtable& dict, istream& words, unsigned int nu
 }
 
 
-/*                                                                                                                                                                                                              
+/*
  * Load the words in the file into the dictionary trie
  */
 void Utils::load_dict(DictionaryTrie& dict, istream& words)
@@ -221,7 +224,7 @@ void Utils::load_dict(DictionaryTrie& dict, istream& words)
 }
 
 
-/*                                                                                                                                                                                                              
+/*
  * Load num_words from words stream into the dictionary trie
  */
 void Utils::load_dict(DictionaryTrie& dict, istream& words, unsigned int num_words)
@@ -259,3 +262,4 @@ void Utils::load_dict(DictionaryTrie& dict, istream& words, unsigned int num_wor
 }
 
 
+#endif // UTIL_CPP

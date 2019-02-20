@@ -11,6 +11,8 @@ test: util.o DictionaryTrie.o DictionaryBST.o DictionaryHashtable.o
 
 benchtrie: util.o DictionaryTrie.o DictionaryBST.o DictionaryHashtable.o
 
+benchdict: util.o DictionaryTrie.o DictionaryBST.o DictionaryHashtable.o
+
 DictionaryTrie.o: DictionaryTrie.hpp
 
 DictionaryBST.o: DictionaryBST.hpp

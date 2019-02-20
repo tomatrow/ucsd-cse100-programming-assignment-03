@@ -1,3 +1,7 @@
+#ifndef DICTIONARYBST_CPP
+#define DICTIONARYBST_CPP
+
+
 #include "util.hpp"
 #include "DictionaryBST.hpp"
 
@@ -11,8 +15,10 @@ bool DictionaryBST::insert(std::string word) {
 
 /* Return true if word is in the dictionary, and false otherwise */
 bool DictionaryBST::find(std::string word) const {
-	return ((myDict.find(word) != myDict.end()) ? true : false);	
+	return ((myDict.find(word) != myDict.end()) ? true : false);
 }
 
 /* Destructor */
 DictionaryBST::~DictionaryBST(){}
+
+#endif // DICTIONARYBST_CPP

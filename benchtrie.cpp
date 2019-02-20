@@ -1,6 +1,6 @@
-//
-// Created by Zizhou zhai on 2/1/16.
-//
+#ifndef BENCHTRIE_CPP
+#define BENCHTRIE_CPP
+
 
 #include "util.hpp"
 #include "DictionaryTrie.hpp"
@@ -170,3 +170,5 @@ int main(int argc, char *argv[]) {
     testStudent(argv[1]);
 
 }
+
+#endif // BENCHTRIE_CPP
